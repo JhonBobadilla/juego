@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(146, 217, 219);
+}
+
+#seleccionar-mascota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    color: white;
+    font-size: 90px;
+    font-weight: 100;
+    height: 120px;
+}
+.subtitulo{
+
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tarjetas, .tarjetas-ataque {
+
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 120px;
+    background-color: blue;
+    padding: 10px; 
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img{ /*ojo esto es truco especial, acá la img está sin class ni id
+                          se puso despues de la class tarjetas-de-mokepon*/
+
+width: 80px;
+
+}
+
+#boton-mascota {
+    margin: 10px 1PX 5PX 10PX;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background: blue;
+    border: 5px solid white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    color: white;
+}
+
+input {
+    display: none;  /*con el comando display none los input quedan fuera de vista, en caso  
+                     de dejarse se veria una bolita de selección en las tarejetas de los mokepones
+                     una viñeta de css se trae sin . ni # solo nombre, como en este caso*/
+}
+
+input:checked + label {
+
+background-color: rgb(6, 241, 249);
+
+}
+                     
+#seleccionar-ataque {
+
+    flex-direction: column;
+    align-items: center;
+
+}   
+
+.boton-de-ataque{
+
+    background-color: blue;
+    padding: 10px;
+    border-radius: 20px;
+    width: 220px;
+    height: 50px;
+    margin: 30px 30px 30px 30px;
+    border: 5px solid white;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+#mensajes{
+
+
+    width: 750px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 220px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: blue;
+   
+
+
+}
+
+#boton-reiniciar{
+
+    width: 100px;
+    height: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border-color: rgb(5, 171, 253);
+    color: rgb(5, 171, 253);
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.ataques{
+
+    display:grid;
+    grid-template-columns: 300px 300px;
+    justify-items: center;
+    color: white;
+}
+
+#ver-mapa {
+
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+#mapa {
+
+border: 2px solid white;
+
+}
+
+@media (max-width: 360px){
+
+.tarjetas, .tarjetas-ataque {
+   flex-direction: column; 
+}
+.titulo{
+    font-size: 30px;
+   }
+
+.subtitulo{
+
+    font-size: 20px;
+    
+} 
+
+#mensajes{
+
+    width: 300px;
+    
+}
+
+.ataques{
+   
+    grid-template-columns: 150px 150px;
+   
+}
+
+#boton-reiniciar{
+
+    
+    margin-left: -5px;
+    
+}
+
+}
+
+
+
+ 
+
+
+
